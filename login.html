@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HanCommerce</title>
+	<link rel="shortcut icon" href="hancommerce-icon1.ico" /> <!-- Website Icon -->
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" type="text/css" href="css/han-commerce.css">
+	<script type="text/javascript" src="js/fontawesome-all.js"></script>
+</head>
+<body>
+	<!-- NAVBAR -->
+	<nav id="main-nav" class="navbar navbar-expand-md bg-dark navbar-dark py-4 fixed-top">
+		<div class="container">
+			<!-- <a href="index.html" class="navbar-brand"><img src=""> HanCommerce</a> -->
+
+			<button class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navbar-collapse" class="collapse navbar-collapse">
+				<ul class="navbar-nav ml-3">
+					<li class="nav-item">
+						<a href="index.html" class="nav-link navbar-border-left">Home</a>
+					</li>
+					<li class="nav-item">
+						<a href="#share-head-section" class="nav-link navbar-border-left">Clothes</a>
+					</li>
+					<li class="nav-item">
+						<a href="#share-head-section" class="nav-link navbar-border-left">Music</a>
+					</li>
+					<li class="nav-item">
+						<a href="games.html" class="nav-link navbar-border-left active">Games</a>
+					</li>
+					<li class="nav-item">
+						<a href="#share-head-section" class="nav-link navbar-border-left">Jewellery</a>
+					</li>
+					<li class="nav-item">
+						<a href="#share-head-section" class="nav-link navbar-border-left">Make-Up & Perfumes</a>
+					</li>
+					<li class="nav-item">
+						<a href="contactus.html" class="nav-link navbar-border-left">Contact Us</a>
+					</li>
+				</ul>
+					<!-- user profile tabs -->
+				<ul class="navbar-nav ml-auto">
+					<li class="nav-item dropdown  mr-2">
+						<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fas fa-user"></i> Welcome Duah</a>
+						<!-- dropdown -->
+						<div class="dropdown-menu">
+							<a href="profile.html"  class="dropdown-item"><i class="fas fa-user"></i> Profile</a>
+							<a href="settings.html" class="dropdown-item"><i class="fas fa-cogs"></i> Settings</a>
+							<a href="settings.html" class="dropdown-item"><i class="fas fa-cart-plus"></i> Cart</a>
+							<a href="settings.html" class="dropdown-item"><i class="fas fa-heart"></i>  Wishlist</a>
+						</div>
+					</li>
+					<li class="nav-item  mr-5">
+						<a href="login.html" class="nav-link"><i class="fas fa-user-times"></i> Logout</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+
+		<!-- LOGIN -->
+<section id="login">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6 mx-auto down">
+					<div class="card">
+						<div class="card-header bg-warning">
+							<h4>Account Login</h4>
+						</div>
+						<div class="card-body">
+							<form action="index.html">
+								<div class="form-group">
+									<label for="email">Email</label>
+									<input type="text" name="email" class="form-control">
+								</div>
+								<div class="form-group">
+									<label for="password">Password</label>
+									<input type="password" name="password" class="form-control">
+								</div>
+								<input type="submit" value="Login" class="btn btn-block btn-warning">
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>	
+
+	
+	<!-- FOOTER -->
+	<section id="footer">
+		<div class="bg-warning mt-5 p-5">
+			<div class="container">
+			 	<div class="row">
+					<div class="col">
+						<p class="text-center py-2"> Copyright &copy; 2018</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+</body>
+	<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/popper.js"></script>
+	<script type="text/javascript" src="js/ekko-lightbox.js"></script>
+	<script type="text/javascript" src="js/ckeditor/ckeditor.js"></script>
+
+	<script type="text/javascript">
+		//Get Current Year
+		$('#year').text(new Date().getFullYear());
+
+		//Configure Carousel
+		$('.carousel').carousel({
+			interval: 4000, pause: 'hover'
+		});
+
+		//Lightbox Init
+		$(document).on('click', '[data-toggle="lightbox"]', function(event) {
+                event.preventDefault();
+                $(this).ekkoLightbox();
+            });
+
+	</script>
+</html>
